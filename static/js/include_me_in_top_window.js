@@ -11,13 +11,13 @@ $(document).ready(function(){
     //pass the focus and blur events down to the iframe
     $(window).focus(function(){
         $('iframe').filter('.etherpad').each(function(idex,ele){
-            ele.contentWindow.postMessage('ep_background_notify_sound:true',ele.src);
+            ele.contentWindow.postMessage('ep_background_notify_set_is_active:true',ele.src);
         });
     });
 
     $(window).blur(function(){
         $('iframe').filter('.etherpad').each(function(idex,ele){
-            ele.contentWindow.postMessage('ep_background_notify_sound:false',ele.src);
+            ele.contentWindow.postMessage('ep_background_notify_set_is_active:false',ele.src);
         });
     });
 });
