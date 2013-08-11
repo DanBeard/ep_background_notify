@@ -1,0 +1,22 @@
+{
+  "name": "ep_background_notify",
+  "version": "0.0.1",
+  "description": "Etherpad plugin to notify the user when an etherpad has been changed and they aren't looking at it.",
+  "author": "Daniel Beard <dryawgmoth@gmail.com>",
+  "contributors": [
+      {
+          "name": "Daniel Beard",
+          "email": "dryawgmoth@gmail.com",
+          "website": "http://varx.org"
+      }
+  ],
+  "dependencies": {"MODULE": "0.3.20"},
+  "engines": { "node": ">= 0.6.0"},
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanBeard/ep_background_notify.git"
+  },
+
+  "license" : "MIT"
+}

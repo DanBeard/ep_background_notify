@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "hooks": {
+            "expressCreateServer": "ep_background_notify/server.js:expressCreateServer"
+      },
+        "client_hooks": {
+
+        }
+    }
+  ]
+}
