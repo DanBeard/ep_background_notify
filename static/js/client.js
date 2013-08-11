@@ -15,8 +15,8 @@
         //if we're in an iframe, we need the parent window to be able to communicate focus and blur events to us
         //use cross document messaging for that http://en.wikipedia.org/wiki/Cross-document_messaging
         window.addEventListener('message', function(event){
-            if(event.data == 'true') exports.is_active = true;
-            else if(event.data == 'false') exports.is_active = false;
+            if(event.data == 'ep_background_notify_sound:true') exports.is_active = true;
+            else if(event.data == 'ep_background_notify_sound:false') exports.is_active = false;
         }, false);
 
 };
