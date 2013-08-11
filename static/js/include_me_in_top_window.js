@@ -38,8 +38,8 @@ $(document).ready(function(){
             {
                 ep_background_notify_original_title = document.title
                 ep_background_notify_flash_title_interval = setInterval(function(){
-                        document.title = document.title == ep_background_notify_original_title ? "***********" : ep_background_notify_flash_title_interval
-                },500);
+                        document.title = document.title == ep_background_notify_original_title ? "***********" : ep_background_notify_original_title
+                },1000);
             }
         }
         else if(event.data=='ep_background_notify_flash_title_stop')

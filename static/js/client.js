@@ -20,7 +20,10 @@ exports.documentReady = function(){
         }
         else
         {
-             $(window).focus(function(){exports.is_active = true});
+             $(window).focus(function(){
+                 parent.postMessage("ep_background_notify_flash_title_stop","*");
+                 exports.is_active = true}
+             );
             //ONLY blur when the parent tells us to
              //$(window).blur(function(){exports.is_active = false});
 
