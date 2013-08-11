@@ -7,7 +7,7 @@
       },
         "client_hooks": {
             "documentReady" : "ep_background_notify/static/js/client:documentReady",
-            "handleClientMessage_NEW_CHANGES" : "ep_background_notify/static/js/client:aceEditEvent"
+            "handleClientMessage_NEW_CHANGES" : "ep_background_notify/static/js/client:handleClientMessage_NEW_CHANGES"
         }
     }
   ]
