@@ -1,5 +1,5 @@
 exports.expressCreateServer = function (hook_name, args, cb) {
-  args.app.get('/apples', function(req, res) {
-    res.send("<em>Abra cadabra</em>");
+  args.app.get('/media/notify', function(req, res) {
+    res.sendfile('static/media/notify.wav');
   });
 }
