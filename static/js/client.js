@@ -11,7 +11,7 @@ exports.documentReady = function(){
         $(window).focus(function(){exports.is_active = true});
         $(window).blur(function(){exports.is_active = false});
         //add an audio tag to the body
-        $('body').append($("<audio id='ep_background_notify_sound' src='/media/notify' preload />"))
+        $('body').append($("<audio id='ep_background_notify_sound' src='static/plugins/ep_background_notify/static/media/notify.wav' preload />"))
 
 };
 
